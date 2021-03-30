@@ -34,6 +34,9 @@ namespace ariel{
 
             }
             string Board::read(unsigned int row,unsigned int col,Direction dir,unsigned int num_of_letters){
+               if(num_of_letters==0){
+                return "";
+                }
                 string out_str;
                 if(dir==Direction::Horizontal){
                 for(unsigned int i=0;i<num_of_letters;i++){
